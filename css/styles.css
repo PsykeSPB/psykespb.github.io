@@ -595,6 +595,7 @@ section h4+p{
 }
 
 #policy-popup.hidden{
+    display: none;
     opacity: 0;
     top: 100vh;
 }
