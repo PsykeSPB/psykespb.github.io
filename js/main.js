@@ -1,6 +1,6 @@
 function draw() {
   // Prepare global variables
-  const body = document.querySelector('body');
+  const body = document.querySelector('#app');
   const screen = {
     width: body.offsetWidth,
     height: body.offsetHeight,
