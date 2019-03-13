@@ -2,8 +2,8 @@ function draw() {
   // Prepare global variables
   const body = document.querySelector('body');
   const screen = {
-    width: body.offsetWidth,
-    height: body.offsetHeight,
+    width: body.getBoundingClientRect().width,
+    height: body.getBoundingClientRect().height,
   };
   // Prepare canvas
   const canvas = document.createElement('canvas');
