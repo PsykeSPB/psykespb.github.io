@@ -19,14 +19,13 @@
     }
   </style>
   <script>
-    const data = null;
     const xhr = new XMLHttpRequest();
     xhr.open('get', 'chart_data.json', false);
     xhr.send();
     if (xhr.status !== 200) {
       console.error('cant load data'); 
     } else {
-      data = xhr.responseText;
+      const data = xhr.responseText;
     }
   </script>
 </head>
