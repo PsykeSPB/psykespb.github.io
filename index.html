@@ -22,7 +22,7 @@
     const xhr = new XMLHttpRequest();
     xhr.open('get', 'chart_data.json', true);
     xhr.send();
-    if (xhr.status !== 200) {
+    if (xhr.status !== '200') {
       console.error('cant load data'); 
     } else {
       const data = xhr.responseText;
