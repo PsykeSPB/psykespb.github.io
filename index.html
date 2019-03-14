@@ -20,7 +20,7 @@
   </style>
   <script>
     const data = null;
-    const xhr = XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open('get', 'chart_data.json', false);
     xhr.send();
     if (xhr.status !== 200) {
