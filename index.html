@@ -19,7 +19,15 @@
     }
   </style>
   <script>
-    import * as data from './chart_data.json';
+    const data = null;
+    const xhr = XMLHttpRequest();
+    xhr.open('get', 'chart_data.json', false);
+    xhr.send();
+    if (xhr.status !== 200) {
+      console.error('cant load data'); 
+    } else {
+      data = xhr.responseText;
+    }
   </script>
 </head>
 <body onload="draw()">
