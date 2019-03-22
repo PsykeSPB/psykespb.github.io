@@ -1,5 +1,5 @@
 import { Plotter } from './plotter.js';
 
-export function init() {
-  const plotter = new Plotter();
-};
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('loaded');
+});
