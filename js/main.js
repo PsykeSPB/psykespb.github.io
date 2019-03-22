@@ -1,5 +1,5 @@
 import { Plotter } from './plotter.js';
 
-function init() {
+export function init() {
   const plotter = new Plotter();
 };
