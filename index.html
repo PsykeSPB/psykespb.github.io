@@ -5,30 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PsykeSPB.github.io</title>
-  <script src="/js/main.js"></script>
-  <style>
-    html, body {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
-    body: {
-      width: 100%;
-      height: 100vh;
-    }
-  </style>
-  <script>
-    const xhr = new XMLHttpRequest();
-    xhr.open('get', 'chart_data.json', true);
-    xhr.send();
-    if (xhr.status !== '200') {
-      console.error('cant load data'); 
-    } else {
-      const data = xhr.responseText;
-    }
-  </script>
+  <script src="/js/main.js" type="module"></script>
 </head>
-<body onload="draw()">
+<body onload="init()">
 </body>
 </html>
