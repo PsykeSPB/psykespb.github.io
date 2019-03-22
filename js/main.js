@@ -22,8 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
       }));
 
       // If data is loaded, lets init our plotter objects
-      charts.forEach((chart) => {
-        const plotter = new Plotter(chart);
+      charts.forEach((chart, index) => {
+        const nav_el = document.querySelector(`#chart-${index}-nav`)
+        const plotter = new Plotter(chart, nav_el);
         console.log(plotter);
       });
 
